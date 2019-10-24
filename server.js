@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 
 app.post('/weather/zip', (req, res) => {
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${req.body.zip},us&appid=${process.env.APPID}`)
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${req.body.zip},us&appid=${process.env.APPID}&units=imperial`)
   .then(data => data.text())
   .then(data => res.send(data))
   .catch(err => console.log("ERROR", err))
