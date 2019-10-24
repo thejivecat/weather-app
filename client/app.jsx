@@ -6,15 +6,19 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      city: 'Boulder'
+      city: 'Boulder',
+      zip: 80305,
+      country: "USA",
+      state: "Colorado"
     };
   }
   componentDidMount() {
-    fetch('/weather', {
-      method: "GET",
+    fetch('/weather/zip', {
+      method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify({"zip": this.state.zip}),
     })
     .then(data => data.text())
     .then(data => console.log(data))
@@ -23,7 +27,7 @@ class App extends React.Component {
   render () {
     return (
       <div id="app">
-        "HEY"
+        "HEllo world"
       </div>
     )
   }
