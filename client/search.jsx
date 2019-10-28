@@ -14,12 +14,22 @@ class Search extends React.Component {
       zip: e.target.value
     })
   }
+  updateCity (e) {
+    this.setState({
+      city: e.target.value
+    })
+  }
+  updateState (e) {
+    this.setState({
+      state: e.target.value
+    })
+  }
   render() {
     return (
       <div className="searchForm">
-        <div className="zipInput">
-          <input value={this.state.zip} onChange={e => this.updateZip(e)} type="text" placeholder="Enter Zipcode" />
-        </div>
+          <input className="zip" value={this.state.zip} onChange={e => this.updateZip(e)} type="text" placeholder="Enter Zipcode" />
+          <input className="state" value={this.state.state} onChange={e => this.updateState(e)} type="text" placeholder="Enter State" />
+          <input className="city" value={this.state.city} onChange={e => this.updateCity(e)} type="text" placeholder="Enter City" />
       </div>
     )
   }
