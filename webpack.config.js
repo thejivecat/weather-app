@@ -11,6 +11,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(s*)css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.jsx?/,
         loader: 'babel-loader',
         query: {

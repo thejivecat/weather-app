@@ -1,0 +1,18 @@
+body {
+  background-image: url('./milky-way.jpg');
+  background-size: 100%;
+  text-align: center;
+}
+.title-app {
+  background-color: aliceblue;
+}
+.searchForm {
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  display: inline-block;
+}
+.weatherCard {
+  background-color: aliceblue;
+}
