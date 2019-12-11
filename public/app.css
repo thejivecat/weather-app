@@ -1,18 +1,36 @@
 body {
-  background-image: url('./milky-way.jpg');
+  background-image: url('https://i.ytimg.com/vi/XBPjVzSoepo/maxresdefault.jpg');
   background-size: 100%;
   text-align: center;
 }
 .title-app {
-  background-color: aliceblue;
+  color: white;
+}
+.date {
+  color: white;
 }
 .searchForm {
-  background-color: aliceblue;
-  margin: 10px;
-  padding: 10px;
-  width: 200px;
   display: inline-block;
 }
 .weatherCard {
-  background-color: aliceblue;
+  color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #2E2E3A;
+  margin: 10px;
+  width: 300px;
 }
+.weatherCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.temperature {
+  padding: 2px 16px;
+}
+.time {
+  padding: 2px 16px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }

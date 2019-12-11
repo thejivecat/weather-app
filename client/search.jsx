@@ -14,11 +14,11 @@ class Search extends React.Component {
   }
   handleSubmit () {
     this.props.updateWeatherData(this.state.zip);
-    // this.setState({
-    //   zip: '',
-    //   state: '',
-    //   city: ''
-    // })
+    this.setState({
+      zip: '',
+      state: '',
+      city: ''
+    })
     
   }
   render() {
